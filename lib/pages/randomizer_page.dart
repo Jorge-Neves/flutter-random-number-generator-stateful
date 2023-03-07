@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class RandomizerPage extends StatefulWidget {
-  const RandomizerPage({super.key});
+  const RandomizerPage({required this.min, required this.max, super.key});
+
+  final int min, max;
 
   @override
   State<RandomizerPage> createState() => _RandomizerPageState();
